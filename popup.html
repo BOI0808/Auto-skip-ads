@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Auto Skip Ads</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Automatically skip ads</h1>
+        <label class="switch">
+          <input type="checkbox" id="enabled" />
+          <span class="track" aria-hidden="true"></span>
+          <span class="sr">Enable or disable the extension</span>
+        </label>
+      </header>
+
+      <section class="count" aria-live="polite">
+        <output id="count">0</output>
+        <p>ad skipped</p>
+      </section>
+
+      <label class="option">
+        <input type="checkbox" id="muteAds" />
+        <span>Mute when ads cannot be skipped</span>
+      </label>
+
+      <button type="button" id="reset">Reset counter</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
